@@ -76,7 +76,14 @@ void int_max(struct node *h)
 	return max;
 
 }
-
+void concate(struct node *a , struct node *b){
+	if(a != NULL,b!=NULL){
+		if(a->next==NULL)
+			a->next = b;
+		else
+			concate(a->next,b);
+	}
+}
 
 
 
